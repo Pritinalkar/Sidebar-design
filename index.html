@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar design</title>
+    <style>
+         .body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            min-width: 100vh;
+            background-color: rgb(117, 17, 175);
+        }
+        .menu-item{
+            margin: 10px;
+            cursor: pointer;
+            display: flex;
+            border-radius: 10px;
+            align-items: center;
+        }
+        .menu-item:hover{
+            background-color: white;
+        }
+        .menu-text{
+            margin-left: 5px;
+            color: white;
+        }
+        .menu-icon{
+            height: 20px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    This is a home page.
+    <div class="container">
+        <div class="menu-item">
+           <img src="./img/home.png" class="menu-icon">
+          <span class="menu-text">Home</span>
+        </div> 
+   </div>
+   <div class="container">
+    <div class="menu-item">
+       <img src="./img/profile.png" class="menu-icon">
+      <span class="menu-text">Profile</span>
+    </div> 
+</div>
+    <div class="container">
+        <div class="menu-item">
+           <img src="./img/settings.png" class="menu-icon">
+          <span class="menu-text">Setting</span>
+        </div> 
+   </div>
+   <div class="container">
+    <div class="menu-item">
+       <img src="./img/help.png" class="menu-icon">
+      <span class="menu-text">Help</span>
+    </div> 
+</div>
+<div class="container">
+    <div class="menu-item">
+       <img src="./img/password.png" class="menu-icon">
+      <span class="menu-text">Password</span>
+    </div> 
+</div>
 </body>
 </html>
