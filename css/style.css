@@ -4,6 +4,7 @@
 }
 .sidebar{
     width: 200px;
+    background-color: rgb(46, 145, 191);
 }
 .container{
     display: flex;
@@ -17,6 +18,7 @@
     border-radius: 5px;
     align-items: center;
     text-decoration: none;
+    background-color: antiquewhite;
 }
 .menu-item:hover{
     background-color: antiquewhite ;
@@ -31,6 +33,45 @@
 .content{
     background-color: aliceblue;
     width: 100%;
-   padding-left: 10px;
-   padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  .bottom-navigation-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(46, 145, 191); 
+    display: none;
+  }
+  .bottom-menu-icon{
+   display: inline;
+   height: 10px;
+  }
+  /* small Device */
+  @media screen and (max-width: 200px){
+   .sidebar{
+    display: none;
+   }
+   .bottom-navigation-bar{
+    display: block;
+   }
+}
+/* Normal Device */
+@media screen and (min-width: 201px) and (max-width:430px)
+{
+    .sidebar{
+        display: none;
+       }
+       .bottom-navigation-bar{
+        display: block;
+       }
+}
+/* Tablets Device */
+@media screen and (min-width: 769px) and (max-width: 992px)
+{
+}
+/* Large Device */
+@media screen and (min-width: 993px) and (max-width: 1200px)
+{
 }

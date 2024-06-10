@@ -4,45 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar design</title>
-    <link rel="stylesheet" href="./css/style.css"  >
-    <style>
-         .body{
-            margin: 0;
-            padding: 0;
-        }
-        .sidebar{
-            width: 200px;
-        }
-        .container{
-            display: flex;
-            min-height: 100vh;
-            background-color: rgb(46, 145, 191);
-        }
-        .menu-item{
-            margin: 10px;
-            cursor: pointer;
-            display: flex;
-            border-radius: 5px;
-            align-items: center;
-            text-decoration: none;
-        }
-        .menu-item:hover{
-            background-color: antiquewhite ;
-        }
-        .menu-text{
-            margin-left: 5px;
-            color: black;
-        }
-        .menu-icon{
-            height: 20px;
-        }
-        .content{
-            background-color: aliceblue;
-            width: 100%;
-           padding-left: 10px;
-           padding-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
@@ -73,5 +35,30 @@
       <h3> This is a home page</h3>
 </div>
 </div>
+<div class="bottom-navigation-bar">
+  <a class="bottom-menu-item">
+    <img src="./img/home.png" class="bottom-menu-icon">
+  </a>
+</div>
+<div class="bottom-navigation-bar">
+    <a class="bottom-menu-item">
+      <img src="./img/profile.png" class="bottom-menu-icon">
+    </a>
+  </div>
+  <div class="bottom-navigation-bar">
+    <a class="bottom-menu-item">
+      <img src="./img/setting.png" class="bottom-menu-icon">
+    </a>
+  </div>
+  <div class="bottom-navigation-bar">
+    <a class="bottom-menu-item">
+      <img src="./img/help.png" class="bottom-menu-icon">
+    </a>
+  </div>
+  <div class="bottom-navigation-bar">
+    <a class="bottom-menu-item">
+      <img src="./img/password.png" class="bottom-menu-icon">
+    </a>
+  </div>
 </body>
 </html>
