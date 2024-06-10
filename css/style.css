@@ -43,10 +43,15 @@
     width: 100%;
     background-color: rgb(46, 145, 191); 
     display: none;
+
   }
   .bottom-menu-icon{
-   display: inline;
    height: 10px;
+   align-items: center;
+   margin: 5px;
+   padding: 3px;
+   background-color: antiquewhite;
+   border-radius: 15px;
   }
   /* small Device */
   @media screen and (max-width: 200px){
@@ -54,7 +59,8 @@
     display: none;
    }
    .bottom-navigation-bar{
-    display: block;
+    display: flex;
+    justify-content: space-around;
    }
 }
 /* Normal Device */
@@ -64,7 +70,8 @@
         display: none;
        }
        .bottom-navigation-bar{
-        display: block;
+        display: flex;
+        justify-content: space-around;
        }
 }
 /* Tablets Device */
